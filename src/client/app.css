@@ -1,0 +1,132 @@
+.wrapper {
+  padding: 0 0 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.menu-summary {
+  background: #F8F8F8;
+  padding: 30px 0;
+  min-height: 86px;
+}
+
+.dietary-list,
+.dietary-record-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dietary-record-list {
+  margin: 0;
+}
+
+.dietary-list li,
+.dietary-record-list {
+  display: inline-flex;
+}
+
+.dietary {
+  font-size: 10pt;
+  border-radius: 100%;
+  background: #A0C9CD;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  color: #FFF;
+}
+.dietary-record-list .dietary {
+  margin: 0 8px 0 0;
+}
+
+.menu-summary-left {
+  font-weight: bold;
+}
+.menu-summary-right {
+  text-align: right;
+}
+
+.menu-builder {
+  margin: 50px 0;
+}
+
+.filters {
+  background: #F8F8F8;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.filters .form-control {
+  border: 1px solid #C1C1C1;
+  padding: 8px;
+  max-width: 294px;
+}
+
+
+.item-picker {
+  background: #F8F8F8;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+  height: 500px;
+  overflow: scroll;
+  border-radius: 5px;
+}
+
+.menu-preview {
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+li.item {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+li.item:hover {
+  background: #A0C9CD;
+  color: #FFF;
+}
+
+li.item:hover .dietary {
+  background: #FFF;
+  color: #212529;
+}
+
+li.item h2 {
+  font-size: 12pt;
+}
+
+li.item p {
+  margin: 0;
+}
+
+button.remove-item {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  -webkit-appearance: none;
+  border: 2px solid #000;
+  background: #FFF;
+  font-weight: bold;
+  width: 26px;
+  height: 26px;
+  line-height: 0px;
+  border-radius: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+button.remove-item:focus {
+  outline: none;
+}
