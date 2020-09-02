@@ -56,10 +56,11 @@ export default class Menu extends React.Component<MenuProps, MenuState> {
   }
 
   public handleFilterList() {
-    const { list, value } = this.state;
+    const { value } = this.state;
+    const { menuList } = this.props;
     this.setState({
-      list: value === '' ? list : this.props.menuList.filter(item => item.name.toLowerCase().includes((value).toLowerCase()))
-    })
+      list: value === '' ? menuList : menuList.filter(item => item.name.toLowerCase().includes((value).toLowerCase()))
+    });
   }
 
   public handleItemClick(e, item) {
